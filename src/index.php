@@ -31,7 +31,7 @@ if( isset($_SESSION['user_id']) || @$_GET["debug"]=="1"){
 <body>
 
 	<div class="header">
-		<a href="/php-login">Vulnerable Login</a>
+		<a href="/">Vulnerable Login</a>
 	</div>
 
 	<?php if( !empty($user) ): ?>

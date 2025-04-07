@@ -3,7 +3,7 @@
 session_start();
 
 if( isset($_SESSION['user_id']) ){
-	header("Location: /php-login");
+	header("Location: /");
 }
 
 require 'database.php';
@@ -24,7 +24,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 	if ($results != 0){
 
 		$_SESSION['user_id'] = $results['id'];
-		header("Location: /php-login");
+		header("Location: /");
 
 	} else {
 		$message = 'Sorry, those credentials do not match';
@@ -50,7 +50,7 @@ endif;
 <body>
 
 	<div class="header">
-		<a href="/php-login">Vulnerable Login</a>
+		<a href="/">Vulnerable Login</a>
 	</div>
 
 	<?php if(!empty($message)): ?>

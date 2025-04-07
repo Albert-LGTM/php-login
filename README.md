@@ -11,5 +11,5 @@ To build and run the Docker container, you need to type:
 	docker-compose up
   
 
-Then the web application can be accessed on: http://localhost:8001/php-login/
+Then the web application can be accessed on: http://localhost:8001/
 
