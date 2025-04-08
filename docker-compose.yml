@@ -8,8 +8,6 @@ services:
       MYSQL_DATABASE: auth
     ports:
       - 3307:3306
-    volumes:
-      - ./sql:/docker-entrypoint-initdb.d
     networks:
       - localnetwork
     volumes:
